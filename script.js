@@ -153,8 +153,24 @@ document.addEventListener('DOMContentLoaded', () => {
     resetButton.addEventListener('click', () => {
         if (confirm('您確定要清除所有已儲存的資料並恢復為預設值嗎？此操作無法復原。')) {
             localStorage.removeItem('3dPrinterCostCalculatorState');
+            localStorage.removeItem('globalSettingsCollapsed'); // Also clear the collapsed state
             location.reload();
         }
+    });
+
+    // --- Collapsible Card Logic ---
+    const collapsibleCard = document.getElementById('global-settings');
+    const collapsibleHeader = collapsibleCard.querySelector('.collapsible-header');
+
+    // Load collapsed state from localStorage
+    if (localStorage.getItem('globalSettingsCollapsed') === 'true') {
+        collapsibleCard.classList.add('collapsed');
+    }
+
+    collapsibleHeader.addEventListener('click', () => {
+        const isCollapsed = collapsibleCard.classList.toggle('collapsed');
+        // Save collapsed state to localStorage
+        localStorage.setItem('globalSettingsCollapsed', isCollapsed);
     });
 });
 

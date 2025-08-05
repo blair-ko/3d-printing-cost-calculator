@@ -11,19 +11,21 @@
     <div id="app-container">
         <h1>3D列印成本計算機</h1>
 
-        <div id="global-settings" class="settings-card">
-            <h2>通用設定</h2>
-            <div class="input-group">
-                <label for="electricity-price">台灣平均電費 (E, 元/度)</label>
-                <input type="number" id="electricity-price" class="global-input" value="3.5">
-            </div>
-            <div class="input-group">
-                <label for="handling-cost">單次處理人力成本 (H, 元)</label>
-                <input type="number" id="handling-cost" class="global-input" value="50">
-            </div>
-            <div class="input-group">
-                <label for="implicit-cost">其他隱性成本 (I, %)</label>
-                <input type="number" id="implicit-cost" class="global-input" value="10">
+        <div id="global-settings" class="settings-card collapsible-card">
+            <h2 class="collapsible-header">通用設定 <span class="toggle-icon"></span></h2>
+            <div class="collapsible-content">
+                <div class="input-group">
+                    <label for="electricity-price">台灣平均電費 (E, 元/度)</label>
+                    <input type="number" id="electricity-price" class="global-input" value="3.5">
+                </div>
+                <div class="input-group">
+                    <label for="handling-cost">單次處理人力成本 (H, 元)</label>
+                    <input type="number" id="handling-cost" class="global-input" value="50">
+                </div>
+                <div class="input-group">
+                    <label for="implicit-cost">其他隱性成本 (I, %)</label>
+                    <input type="number" id="implicit-cost" class="global-input" value="10">
+                </div>
             </div>
             <div class="actions-container">
                 <div class="formula-display">
