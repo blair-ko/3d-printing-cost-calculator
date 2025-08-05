@@ -108,9 +108,21 @@ td.cost-output {
     font-weight: bold;
 }
 
-.button-container {
-    text-align: right;
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
+    border-top: 1px solid #eef2f7;
+    padding-top: 20px;
+}
+
+.formula-display code {
+    background-color: #f0f2f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
 }
 
 .danger-btn {

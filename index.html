@@ -25,7 +25,10 @@
                 <label for="implicit-cost">其他隱性成本 (I, %)</label>
                 <input type="number" id="implicit-cost" class="global-input" value="10">
             </div>
-            <div class="button-container">
+            <div class="actions-container">
+                <div class="formula-display">
+                    <code>總成本 = [ ( (P / L) * T ) + ( (W / 1000) * T * E ) + M + H ] * (1 + I / 100)</code>
+                </div>
                 <button id="reset-defaults-btn" class="danger-btn">恢復預設值</button>
             </div>
         </div>
