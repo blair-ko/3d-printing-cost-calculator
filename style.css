@@ -1,0 +1,130 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+#app-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    color: #1a2b4d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.settings-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.settings-card h2 {
+    margin-top: 0;
+    color: #1a2b4d;
+    border-bottom: 2px solid #eef2f7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    flex-basis: 250px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+input[type="number"], input[type="text"] {
+    flex-grow: 1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.table-container {
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+    position: sticky;
+    top: 0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td input {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+td.cost-output {
+    font-weight: bold;
+    color: #007bff;
+    min-width: 80px;
+    text-align: right;
+}
+
+.printer-name-input {
+    font-weight: bold;
+}
+
+.button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.danger-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.danger-btn:hover {
+    background-color: #c82333;
+}
+

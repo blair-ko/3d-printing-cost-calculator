@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D列印成本計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <h1>3D列印成本計算機</h1>
+
+        <div id="global-settings" class="settings-card">
+            <h2>通用設定</h2>
+            <div class="input-group">
+                <label for="electricity-price">台灣平均電費 (E, 元/度)</label>
+                <input type="number" id="electricity-price" class="global-input" value="3.5">
+            </div>
+            <div class="input-group">
+                <label for="handling-cost">單次處理人力成本 (H, 元)</label>
+                <input type="number" id="handling-cost" class="global-input" value="50">
+            </div>
+            <div class="input-group">
+                <label for="implicit-cost">其他隱性成本 (I, %)</label>
+                <input type="number" id="implicit-cost" class="global-input" value="10">
+            </div>
+            <div class="button-container">
+                <button id="reset-defaults-btn" class="danger-btn">恢復預設值</button>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>印表機名稱</th>
+                        <th>購入價格 (P)</th>
+                        <th>預估壽命 (L, 小時)</th>
+                        <th>列印時間 (T, 小時)</th>
+                        <th>平均功耗 (W, 瓦)</th>
+                        <th>耗材費用 (M)</th>
+                        <th>總成本 (C)</th>
+                    </tr>
+                </thead>
+                <tbody id="printer-rows">
+                    <!-- JavaScript will generate rows here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
